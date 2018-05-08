@@ -1,0 +1,178 @@
+/* main html and body settings */
+html{
+	height:100%;
+}
+
+body{
+	background-color: #536878;
+  display:table;
+  margin:auto;
+  color: #fff;
+  text-align: center;
+font-family: 'Lato', sans-serif;
+
+
+}
+
+section{
+padding:200px;
+
+}
+
+
+/*header and nav settings */
+.cc-head{
+	
+background-color: #536878;
+    width:100%;
+    position: fixed;
+    top: 0;
+    padding:30px;
+height:100px;
+
+
+    
+    
+}
+
+.cc-brand{
+clear:both;
+display:inline-block;
+margin-left:20px;
+text-align:left;
+line-height:1;
+}
+
+.cc-brand>h2{
+margin:0;
+padding:0;
+}
+
+.cc-brand>p{
+margin-top:5px;
+padding:0;
+}
+
+.cc-menu{
+
+margin-right:50px;
+
+		
+} 
+
+.cc-nav{
+
+
+}
+
+.cc-nav > li {
+  display: inline-block;
+  
+}
+.cc-nav > li + li {
+  margin-left: 20px;
+}
+.cc-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.cc-nav > li > a:hover,
+.cc-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.cc-nav > .active > a,
+.cc-nav > .active > a:hover,
+.cc-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+
+/* main content center settings */
+
+.cc-container{
+	
+  
+}
+
+.cc-container>div{
+padding-top:50px;
+  padding-bottom:50px;
+}
+
+.column>span{
+display:inline-block;
+font-style:italic;
+font-size:14px;
+} 
+
+.column>h3{
+margin-bottom:0;
+}
+
+.column>p{
+text-align:left;
+}
+/* image gallery settings */
+
+.row{
+display:table;
+margin:auto;
+
+}
+.column {
+  display:table-cell;
+  padding: 0 8px;
+  margin:auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.zoom {
+    padding: 25px;
+    margin:auto;
+    
+    transition: transform .2s; /* Animation */
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*footer settings*/
+
+
+.cc-footer{
+background-color: #ffffff;
+    color:#536878;
+    position: fixed;
+    bottom: 0;
+    padding:10px;
+width:100%;
+    margin:auto;
+text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .cc-brand {
+    float: left;
+  }
+  .cc-menu {
+    float: right;
+  }
+}
